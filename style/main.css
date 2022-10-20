@@ -1,5 +1,6 @@
 /* Reset */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 * {
   padding: 0px;
   margin: 0px;
@@ -77,20 +78,8 @@ label {
   cursor: pointer;
 }
 
-/* Trajan Pro 3 */
-@font-face {
-  font-family: "Trajan Pro 3";
-  src: local("Trajan Pro 3 Regular"), local("Trajan-Pro-3-Regular"), url("/fonts/TrajanPro3/TrajanPro3Regular.ttf") format("woff2"), url("/fonts/TrajanPro3Regular.woff") format("woff"), url("/fonts/TrajanPro3Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Trajan Pro 3";
-  src: local("Trajan Pro 3 Semi Bold"), local("Trajan-Pro-3-Semi-Bold"), url("/fonts/TrajanPro3SemiBold.woff2") format("woff2"), url("/fonts/TrajanPro3SemiBold.woff") format("woff"), url("/fonts/TrajanPro3SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
 /* Inter */
+/* Lato */
 body {
   font-family: "Inter Regular", sans-serif;
   font-style: normal;
@@ -107,7 +96,7 @@ body {
 }
 
 .section-title {
-  font-family: "Trajan Pro 3";
+  font-family: "Lato", sans-serif;
   font-size: 2.8rem;
   line-height: 3.4rem;
   text-align: center;
@@ -116,7 +105,7 @@ body {
 }
 
 .section-subtitle {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 1.25rem;
   line-height: 1.75rem;
   text-align: center;
@@ -168,7 +157,7 @@ html {
 .btn {
   display: block;
   padding: 14.5px 22.5px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.18rem;
@@ -257,7 +246,7 @@ html {
   row-gap: 20px;
 }
 .nav-link {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 1rem;
   line-height: 1.2rem;
   display: flex;
@@ -326,7 +315,7 @@ html {
   }
 }
 .hero {
-  background-image: url("/images/hero/hero-img.png");
+  background-image: url("../../images/hero/hero-img.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -342,7 +331,7 @@ html {
   padding-bottom: 20px;
 }
 .hero-title {
-  font-family: "Trajan Pro 3";
+  font-family: "Lato", sans-serif;
   font-size: 3.75rem;
   line-height: 4.5rem;
   color: #1E2533;
@@ -356,7 +345,7 @@ html {
 .hero-list_item {
   position: relative;
   padding-left: 40px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 1.25rem;
   line-height: 1.5rem;
   color: #1E2533;
@@ -407,7 +396,7 @@ html {
 }
 .about-list-item {
   padding: 15px 25px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.18rem;
@@ -456,7 +445,7 @@ html {
   position: relative;
   max-width: 450px;
   padding: 40px 30px 40px 80px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 1.12rem;
   line-height: 1.37rem;
   color: #1E2533;
@@ -563,7 +552,7 @@ html {
   max-width: 545px;
 }
 .present-title {
-  font-family: "Trajan Pro 3";
+  font-family: "Lato", sans-serif;
   font-weight: 600;
   font-size: 2.8rem;
   line-height: 3.4rem;
@@ -573,7 +562,7 @@ html {
   color: #FA7846;
 }
 .present-text {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 1.25rem;
   line-height: 1.68rem;
   color: #1E2533;
@@ -677,7 +666,7 @@ html {
   border-radius: 50%;
 }
 .order-item-title {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 1.12rem;
   line-height: 1.6rem;
@@ -685,7 +674,7 @@ html {
   margin: 7px 0;
 }
 .order-item-text {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
   color: #fff;
@@ -700,7 +689,7 @@ html {
 }
 .order-btn {
   max-width: 470px;
-  font-family: "Trajan Pro 3";
+  font-family: "Lato", sans-serif;
   font-weight: 600;
   font-size: 1.93rem;
   line-height: 2.87rem;
@@ -710,7 +699,7 @@ html {
   display: block;
   max-width: 350px;
   margin-top: 9px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 0.93rem;
   line-height: 1.12rem;
@@ -735,7 +724,7 @@ html {
 }
 .works-slide-title {
   margin: 20px 0 10px;
-  font-family: "Trajan Pro 3";
+  font-family: "Lato", sans-serif;
   font-size: 1.25rem;
   line-height: 1.5rem;
   letter-spacing: -0.02em;
@@ -743,7 +732,7 @@ html {
 }
 .works-slide-size {
   margin-bottom: 15px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 1rem;
   line-height: 1.37rem;
   color: rgba(17, 0, 0, 0.5);
@@ -760,14 +749,14 @@ html {
 }
 .works-media-text {
   max-width: 420px;
-  font-family: "Trajan Pro 3";
+  font-family: "Lato", sans-serif;
   font-size: 2.81rem;
   line-height: 3.37rem;
   letter-spacing: -0.03em;
   color: #1E2533;
 }
 .works-media-text span {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
@@ -801,7 +790,7 @@ html {
   margin-top: 50px;
 }
 .support-bg {
-  background-image: url("/images/support/support-bg.png");
+  background-image: url("../../images/support/support-bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -816,7 +805,7 @@ html {
   max-width: 300px;
 }
 .support-item-text {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 1, 25rem;
   line-height: 1.75rem;
   color: #1E2533;
@@ -835,7 +824,7 @@ html {
   transform: translateY(-10%);
 }
 .support-form-title {
-  font-family: "Trajan Pro 3";
+  font-family: "Lato", sans-serif;
   font-size: 1.87rem;
   line-height: 2, 25rem;
   letter-spacing: -0.03em;
@@ -853,14 +842,14 @@ html {
 }
 .support-form-text {
   display: block;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 0.87rem;
   line-height: 1rem;
   margin-bottom: 5px;
   color: #1E2533;
 }
 .support-form-input-inner {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 0.87rem;
   line-height: 1rem;
   width: 250px;
@@ -873,7 +862,7 @@ html {
   border-radius: 8px;
 }
 .support-form-input-textarea {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 0.87rem;
   line-height: 1rem;
   width: 250px;
@@ -953,7 +942,7 @@ html {
   left: 0;
 }
 .faq-contact-title {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 1.12rem;
   line-height: 1.62rem;
   letter-spacing: -0.02em;
@@ -961,7 +950,7 @@ html {
 }
 .faq-contact-text {
   margin: 10px 0 20px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 0.87rem;
@@ -979,7 +968,7 @@ html {
   cursor: pointer;
 }
 .faq-accordion-title {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 1.12rem;
   line-height: 1.62rem;
@@ -1025,7 +1014,7 @@ html {
   left: 0;
 }
 .other-item-text {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
   text-align: center;
@@ -1033,7 +1022,7 @@ html {
   margin: 10px 0;
 }
 .other-item-price {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 1.5rem;
   line-height: 1.81rem;
   color: #1E2533;
@@ -1067,7 +1056,7 @@ html {
 }
 .footer-address-item {
   display: block;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 1.06rem;
   line-height: 1.5rem;
@@ -1083,7 +1072,7 @@ html {
 }
 .footer-social-text {
   display: block;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.37rem;
@@ -1117,7 +1106,7 @@ html {
   min-width: 220px;
 }
 .footer-col-title {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 1.12rem;
   line-height: 1.62rem;
@@ -1132,7 +1121,7 @@ html {
   row-gap: 20px;
 }
 .footer-col-item {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 1rem;
   line-height: 1.18rem;
   text-transform: capitalize;
@@ -1199,7 +1188,7 @@ html {
 }
 .copyright-text {
   display: block;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 0.93rem;
   line-height: 1.12rem;
   color: #fff;

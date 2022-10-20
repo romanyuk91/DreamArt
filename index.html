@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://kit.fontawesome.com/48c5daf7a7.js" crossorigin="anonymous"></script>
+    <link href="./style/main.css" rel="stylesheet">
+
+    <title>DreamArt</title>
+</head>
+<body>
+
+    <!-- header -->
+
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="#">
+                    <img src="/images/header/logo.svg" alt="logo">
+                </a>
+            </div>
+            <div class="header-inner">
+                <div class="header-social">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Портрет по фото</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Печать фото на холсте</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Коллажи</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Идеи</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="nav-btns">
+                    <i class="fa-regular fa-user"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+            <button class="mobile-nav-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+    <main>
+    <!-- hero -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-desc">
+                <h1 class="hero-title">Портрет<br><span>Дрим Арт</span></h1>
+                <ul class="hero-list">
+                    <li class="hero-list_item"><span>Всегда</span> похожие лица!</li>
+                    <li class="hero-list_item">Каждый заказ нарисован <span>рукой художника!</span></li>
+                    <li class="hero-list_item"><span>Красивая и стильная картина</span> из любой обычной фотографии!</li>
+                </ul>
+                <button class="btn hero-btn" href="#">Заказать портрет</button>
+            </div>
+            <div class="hero_image">
+                <img src="/images/hero/hero-photo.png" alt="image">
+            </div>
+        </div>
+    </section>
+    <!-- about -->
+    <section class="about">
+        <div class="container about-container">
+            <h2 class="section-title">Всё проще и доступнее чем кажется</h2>
+            <div class="about-tabs">
+                <ul class="about-list">
+                    <li class="about-list-item about-list-title">Портрет на холсте:</li>
+                    <li class="about-list-item" data-tab="tab-1">Что это такое</li>
+                    <li class="about-list-item" data-tab="tab-2">Требование к снимку</li>
+                    <li class="about-list-item" data-tab="tab-3">Цены и размеры</li>
+                    <li class="about-list-item" data-tab="tab-4">Доставка и время</li>
+                </ul>
+                <div data-tab-content id="tab-1" class="about-tab">
+                    <div class="about-tab-inner">
+                        <div class="about-tab-image">
+                            <img src="./images/about/about-image.png" alt="image">
+                        </div>
+                        <div class="about-tab-desc">
+                            <ul class="about-tab-list">
+                                <li class="about-tab-item">
+                                    <img src="./images/about/about-list1.png">
+                                        <span>Портрет рисует художник.</span>
+                                        Детально прорисовывает все части портрета! 
+                                </li>
+                                <li class="about-tab-item">
+                                    <img src="./images/about/about-list2.png">
+                                    Покрытие Вашей картины защитным 
+                                    <span>акриловым лаком или текстурным гелем.</span> 
+                                </li>
+                                <li class="about-tab-item">
+                                    <img src="./images/about/about-list3.png">
+                                    Яркость и прочность материалов <span>более 100 лет!</span> 
+                                    Холст сохранит свое натяжение и не провиснет!
+                                </li>
+                                <li class="about-tab-item">
+                                    <img src="./images/about/about-list4.png">
+                                    Каждая картина 
+                                    <span>упаковывается подарочную бумагу</span> и украшается бантом! 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div data-tab-content id="tab-2" class="about-tab hidden">
+                    
+                </div>
+                <div data-tab-content id="tab-3" class="about-tab hidden">
+                         
+                </div>
+                <div data-tab-content id="tab-4" class="about-tab hidden">
+                        
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- example -->
+    <section class="example">
+        <div class="container example-container">
+            <h2 class="section-title example-title">Примеры наших портретов</h2>
+            <!-- Slider main container -->
+            <div class="swiper example-swiper">
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                    <div class="swiper-slide example-slide">
+                        <img src="./images/example/portrait1.png" alt="image">
+                    </div>
+                    <div class="swiper-slide example-slide">
+                        <img src="./images/example/portrait2.png" alt="image">
+                    </div>
+                    <div class="swiper-slide example-slide">
+                        <img src="./images/example/portrait1.png" alt="image">
+                    </div>
+                </div>            
+            </div>
+            <!-- navigation buttons -->
+            <div class="slider-btns">
+                <div class="slider-btn example-btn-prev">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div class="slider-btn example-btn-next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div> 
+        </div>
+    </section>
+    <!-- present -->
+    <section class="present">
+        <div class="container present-container">
+            <div class="present-desc">
+                <h2 class="present-title">Портрет на холсте — <span>идеальный подарок!</span></h2>
+                <p class="present-text">Дорогие сердцу воспоминания лучше запечатлеть в виде фотокартин, 
+                    тогда они <span>наполнят дом теплотой и будут радовать глаз.</span></p>
+                <button class="btn" href="#">Заказать портрет</button>
+            </div>
+            <div class="present-photo">
+                <img src="./images/present/present-image.png" alt="image">
+            </div>
+        </div>
+    </section>
+    <!-- order -->
+    <section class="order">
+        <div class="container">
+            <h2 class="section-title order-title">Этапы оформления заказа</h2>
+            <p class="section-subtitle order-subtitle">Заказать фото на холсте —  <span>легко и быстро!</span></p>
+            <div class="order-options">
+                <div class="order-option">
+                    <p>Экспресс: 1 день</p>
+                </div>
+                <div class="order-option">
+                    <p>Стандарт: 3-8 дней</p>
+                </div>
+            </div>
+            <ul class="order-list">
+                <li class="order-item">
+                    <span class="order-item-number">1</span>
+                    <div class="order-item-image">
+                        <img src="./images/order/order-item-1.png" alt="image">
+                    </div>
+                    <h4 class="order-item-title">Фото</h4>
+                    <p class="order-item-text">Кликните «Заказать холст», <span>загрузите Ваше фото</span> 
+                        и укажите желаемые параметры холста</p>
+                </li>
+                <li class="order-item">
+                    <span class="order-item-number">2</span>
+                    <div class="order-item-image">
+                        <img src="./images/order/order-item-2.png" alt="image">
+                    </div>
+                    <h4 class="order-item-title">Обсуждение</h4>
+                    <p class="order-item-text">Мы связываемся с Вами для <span>обсуждение сюжета с художником.</span> 
+                        (Сразу платить не надо)</p>
+                </li>
+                <li class="order-item">
+                    <span class="order-item-number">3</span>
+                    <div class="order-item-image">
+                        <img src="./images/order/order-item-3.png" alt="image">
+                    </div>
+                    <h4 class="order-item-title">Портрет</h4>
+                    <p class="order-item-text">После согласования нужно внести авансовый платёж 20%  
+                        или 100% <span>Художник рисует портрет.</span></p>
+                </li>
+                <li class="order-item">
+                    <span class="order-item-number">4</span>
+                    <div class="order-item-image">
+                        <img src="./images/order/order-item-4.png" alt="image">
+                    </div>
+                    <h4 class="order-item-title">Изготовление</h4>
+                    <p class="order-item-text">После утверждение и корректировки портрета. 
+                        <span>Приступаем к изготовлению</span> Вашего холста!</p>
+                </li>
+                <li class="order-item">
+                    <span class="order-item-number">5</span>
+                    <div class="order-item-image">
+                        <img src="./images/order/order-item-5.png" alt="image">
+                    </div>
+                    <h4 class="order-item-title">Доставка</h4>
+                    <p class="order-item-text"><span>Оперативно доставляем заказ</span> прямо к Вашему дому 
+                        или в любое другое место.</p>
+                </li>
+            </ul>
+            <div class="order-btn-field">
+                <button class="btn order-btn" href="#">
+                    Оформить заказ
+                    <span>Нажмите здесь и Вам откроится форма заказа с удобным конструктором и калькулятором!</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- works -->
+    <section class="works">
+        <div class="container">
+            <h2 class="section-title ">Примеры работ наших клиентов</h2>
+            <p class="section-subtitle ">У нас можно заказать любую картину</p>
+            <!-- Slider main container -->
+            <div class="swiper works-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide works-slide">
+                        <img src="./images/works/works-slide1.png">
+                        <h4 class="works-slide-title">Портрет бьюти шарж</h4>
+                        <div class="works-slide-size"><i class="fa-solid fa-arrows-to-circle"></i>100х70см</div>
+                        <button class="btn" href="#">Хочу такой же себе</button>
+                    </div>
+                    <div class="swiper-slide works-slide">
+                        <img src="./images/works/works-slide2.png">
+                        <h4 class="works-slide-title">Портрет бьюти шарж</h4>
+                        <div class="works-slide-size"><i class="fa-solid fa-arrows-to-circle"></i>100х70см</div>
+                        <button class="btn" href="#">Хочу такой же себе</button>
+                    </div>
+                    <div class="swiper-slide works-slide">
+                        <img src="./images/works/works-slide3.png">
+                        <h4 class="works-slide-title">Портрет бьюти шарж</h4>
+                        <div class="works-slide-size"><i class="fa-solid fa-arrows-to-circle"></i>100х70см</div>
+                        <button class="btn" href="#">Хочу такой же себе</button>
+                    </div>
+                    <div class="swiper-slide works-slide">
+                        <img src="./images/works/works-slide4.png">
+                        <h4 class="works-slide-title">Портрет бьюти шарж</h4>
+                        <div class="works-slide-size"><i class="fa-solid fa-arrows-to-circle"></i>100х70см</div>
+                        <button class="btn" href="#">Хочу такой же себе</button>
+                    </div>
+                </div>
+                
+                <!-- navigation buttons -->
+                <div class="slider-btns">
+                    <div class="slider-btn works-btn-prev">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="slider-btn works-btn-next">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div> 
+            </div>
+            <div class="works-media">
+                <p class="works-media-text">Посмотрите<br> 60-секундное видео и узнайте,
+                    <span>как художник нарисует вашу картину</span>
+                </p>
+                <div class='works-video'>
+                    <iframe src='https://www.youtube.com/embed//qHo-KyNtOnQ' 
+                    frameborder='0' allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- support -->
+    <section class="support">
+        <div class="container">
+            <h2 class="section-title ">Бесплатная помощь дизайнера</h2>
+            <p class="section-subtitle ">Всё проще и доступнее чем кажется</p>
+        </div>
+            <div class="support-bg">
+                <div class="container">
+                    <ul class="support-list">
+                        <li class="support-item">
+                            <p class="support-item-text"><span>У Вас есть сомнения?</span> Мы поможем найти лучшее решение и предложим профессиональный совет</p>
+                            <p class="support-item-text"><span>Широкие возможности.</span> Для Вас создадим один или несколько макетов, учитывая индивидуальные особенности фотографии.</p>
+                        </li>
+                        <li class="support-item text-align-right">
+                            <p class="support-item-text"><span>Идеальный результат.</span> Для всех заказов мы вносим правки, пока Вы не скажите - ДА!</p>
+                            <p class="support-item-text"><span>Любые идеи и пожелания.</span> Пожалуйста свяжитесь с наши для получения более подробной информации.</p>
+                        </li>
+                    </ul>
+                    <!-- form -->
+                    <div class="support-form-card">
+                        <h2 class="support-form-title ">Опишите проблему и мы предложим вам решение</h2>
+                        <form class="support-form">
+                            <label class="support-form-field">
+                                <span class="support-form-text">Укажите Ваш E-mail</span>
+                                <div class="support-form-input-inner">
+                                    <input class="support-form-input" type="email" name="email" placeholder="E-mail">
+                                    <img src="./images/support/mail-icon.png">
+                                </div>
+                            </label>
+                            <label class="support-form-field">
+                                <span class="support-form-text">Укажите Ваш номер телефона</span>
+                                <div class="support-form-input-inner">
+                                    <input class="support-form-input" type="tel" name="tel" pattern="+308" placeholder="Phone">
+                                    <img src="./images/support/phone-icon.png">
+                                </div>
+                            </label>
+                            <label class="support-form-field">
+                                <span class="support-form-text">Добавьте комментарий</span>
+                                <textarea class="support-form-input-textarea"></textarea>
+                            </label>
+                            <label class="support-form-field file-field">
+                                <span class="support-form-text">Фото (необязательно)</span>
+                                <input class="support-form-input file-field-input" type="file">
+                                <div class="file-field-button">
+                                    <img src="./images/support/upload-icon.png">
+                                    <div class="file-field-button-text">Загрузить фото</div>
+                                </div>
+                            </label>
+                        </form>
+                        <button class="btn support-btn" href="#">Отправить</button>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- faq -->
+    <section class="faq">
+        <div class="container faq-container">
+            <div class="faq-desc">
+                <h2 class="section-title">Часто задаваемые вопросы</h2>
+                <div class="faq-contact">
+                    <img src="./images/faq/faq-icon.png" class="faq-contact-icon">
+                    <h4 class="faq-contact-title">Все еще есть сомнения?</h4>
+                    <p class="faq-contact-text">Менеджер с удовольствием ответит на все ваши вопросы в мессенджере</p>
+                    <button class="btn support-btn" href="#"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+                </div>
+            </div>
+            <ul class="faq-list">
+                <li class="faq-accordion">
+                  <div class="faq-accordion-control">
+                    <img class="faq-accordion-icon" src="./images/faq/accordion-icon.png" alt="image">
+                    <span class="faq-accordion-title">Как мне ухаживать за картинами и холстами?</span>
+                  </div>
+                  <div class="faq-accordion-content hidden">
+                    <p class="text">Если работа Вам по какой-то причине не понравится, мы вернем все деньги по первой Вашей просьбе. 
+                        Конечно если работа не была испорчена (порвана, поцарапана, или разбита).</p>
+                  </div>
+                </li>
+                <li class="faq-accordion">
+                  <div class="faq-accordion-control">
+                    <img class="faq-accordion-icon" src="./images/faq/accordion-icon.png" alt="image">
+                    <span class="faq-accordion-title">А вдруг работа мне не понравится? 
+                        И я не доволен работой могу ли я вернуть холст или багет?</span>
+                  </div>
+                  <div class="faq-accordion-content hidden">
+                    <p class="text">Если работа Вам по какой-то причине не понравится, мы вернем все деньги по первой Вашей просьбе. 
+                        Конечно если работа не была испорчена (порвана, поцарапана, или разбита).</p>
+                  </div>
+                </li>
+                <li class="faq-accordion">
+                    <div class="faq-accordion-control">
+                      <img class="faq-accordion-icon" src="./images/faq/accordion-icon.png" alt="image">
+                      <span class="faq-accordion-title">Как заказать печать на холсте, багет или портрет?</span>
+                    </div>
+                    <div class="faq-accordion-content hidden">
+                      <p class="text">Если работа Вам по какой-то причине не понравится, мы вернем все деньги по первой Вашей просьбе. 
+                        Конечно если работа не была испорчена (порвана, поцарапана, или разбита).</p>
+                    </div>
+                  </li>
+                  <li class="faq-accordion">
+                    <div class="faq-accordion-control">
+                      <img class="faq-accordion-icon" src="./images/faq/accordion-icon.png" alt="image">
+                      <span class="faq-accordion-title">Хочется заказать не стандартные размеры печати! 
+                        Можно ли заказать другие размеры холста или постера, которого у вас нет в прайсе? 
+                        Могу ли я заказать печать холста по своим размерам?</span>
+                    </div>
+                    <div class="faq-accordion-content hidden">
+                      <p class="text">Если работа Вам по какой-то причине не понравится, мы вернем все деньги по первой Вашей просьбе. 
+                        Конечно если работа не была испорчена (порвана, поцарапана, или разбита).</p>
+                    </div>
+                  </li>
+                  <li class="faq-accordion">
+                    <div class="faq-accordion-control">
+                      <img class="faq-accordion-icon" src="./images/faq/accordion-icon.png" alt="image">
+                      <span class="faq-accordion-title">Можно ли ваши холсты вешать во влажных помещениях, 
+                        в ванной или в сауне?</span>
+                    </div>
+                    <div class="faq-accordion-content hidden">
+                      <p class="text">Если работа Вам по какой-то причине не понравится, мы вернем все деньги по первой Вашей просьбе. 
+                        Конечно если работа не была испорчена (порвана, поцарапана, или разбита).</p>
+                    </div>
+                  </li>
+                  <li class="faq-accordion">
+                    <div class="faq-accordion-control">
+                      <img class="faq-accordion-icon" src="./images/faq/accordion-icon.png" alt="image">
+                      <span class="faq-accordion-title">Какого качества должна быть фотография для заказа?</span>
+                    </div>
+                    <div class="faq-accordion-content hidden">
+                      <p class="text">Если работа Вам по какой-то причине не понравится, мы вернем все деньги по первой Вашей просьбе. 
+                        Конечно если работа не была испорчена (порвана, поцарапана, или разбита).</p>
+                    </div>
+                  </li>
+                  <li class="faq-accordion">
+                    <div class="faq-accordion-control">
+                      <img class="faq-accordion-icon" src="./images/faq/accordion-icon.png" alt="image">
+                      <span class="faq-accordion-title">Как заказать печать на холсте, багет или портрет?</span>
+                    </div>
+                    <div class="faq-accordion-content hidden">
+                      <p class="text">Если работа Вам по какой-то причине не понравится, мы вернем все деньги по первой Вашей просьбе. 
+                        Конечно если работа не была испорчена (порвана, поцарапана, или разбита).</p>
+                    </div>
+                  </li>
+              </ul>
+        </div>
+    </section>
+    <!-- other -->
+    <section class="other">
+        <div class="container">
+            <h2 class="section-title">Также можете посмотреть<br>другие стили</h2>
+            <div class="other-list">
+                <div class="other-item">
+                    <div class="other-item-images">
+                        <img class="other-item-image" src="./images/other/Rectangle1.png" alt="image">
+                        <img class="other-item-image" src="./images/other/Rectangle2.png" alt="image">
+                        <img class="other-item-image" src="./images/other/Rectangle3.png" alt="image">
+                    </div>
+                    <p class="other-item-text">Бьюти Арт – один из сложных стилей, требующих особого мастерства, 
+                        так как, помимо внешнего сходства и красивого оформления, всегда необходимо передать настроение.
+                    </p>
+                    <div class="other-item-price">от <span>30$</span></div>
+                    <button class="btn other-btn" href="#">Заказать</button>
+                </div>
+                <div class="other-item">
+                    <div class="other-item-images">
+                        <img class="other-item-image" src="./images/other/Rectangle1.png" alt="image">
+                        <img class="other-item-image" src="./images/other/Rectangle4.png" alt="image">
+                    </div>
+                    <p class="other-item-text">Бьюти Арт – один из сложных стилей, требующих особого мастерства, 
+                        так как, помимо внешнего сходства и красивого оформления, всегда необходимо передать настроение.
+                    </p>
+                    <div class="other-item-price">от <span>30$</span></div>
+                    <button class="btn other-btn" href="#">Заказать</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+    <!-- footer -->
+
+    <footer class="footer">
+        <div class="container footer-container">
+
+            <div class="footer-col">
+                <a href="#">
+                    <img src="/images/header/logo.svg" alt="logo">
+                </a>
+                <address class="footer-address">
+                    <span class="footer-address-item">
+                        <img src="./images/support/phone-icon.png">
+                        <a href="tel:371270444470">+371 270444470</a>
+                    </span>
+                    <span class="footer-address-item">
+                        <img src="./images/support/mail-icon.png">
+                        <a href="mailto:orders@viarcanvas.com">orders@viarcanvas.com</a>
+                    </span>
+                    <span class="footer-address-item">
+                        <img src="./images/support/map-icon.png">
+                        Riga, Lubanas 65, LV1073<br>
+                        Daugavpils, Stacijas 129R,<br> 
+                        LV5401
+                    </span>
+                </address>
+                <div class="footer-social">
+                    <span class="footer-social-text">Мы в соцсетях:</span>
+                    <div class="footer-social-icons">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-col-title">Стили портрета</h4>
+                <ul class="footer-col-list">
+                    <li class="footer-col-item">
+                        <a class="footer-col-link" href="#">Печать на холсте</a>
+                    </li>
+                    <li class="footer-col-item">
+                        <a class="footer-col-link" href="#">Портрет по фото</a>
+                    </li>
+                    <li class="footer-col-item">
+                        <a class="footer-col-link" href="#">Каталог готовых картин</a>
+                    </li>
+                    <li class="footer-col-item">
+                        <a class="footer-col-link" href="#">Карикатура/шарж</a>
+                    </li>
+                    <li class="footer-col-item">
+                        <a class="footer-col-link" href="#">Модульные картины</a>
+                    </li>
+                    <li class="footer-col-item">
+                        <a class="footer-col-link" href="#">Дигитальный портрет</a>
+                    </li>
+                    <li class="footer-col-item">
+                        <a class="footer-col-link" href="#">Портрет маслом и акрилом</a>
+                    </li>
+                    <li class="footer-col-item">
+                        <a class="footer-col-link" href="#">Репродукции художников</a>
+                    </li>
+                    <li class="footer-col-item">
+                        <a class="footer-col-link" href="#">Коллаж на холсте</a>
+                    </li>
+                    <li class="footer-col-item">
+                        <a class="footer-col-link" href="#">Портрет в образе</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-col-title">Виды портрета</h4>
+                <ul class="footer-col-list">
+                    <li class="footer-col-item">
+                        <a class="footer-col-link" href="#">Женский портрет</a>
+                    </li>
+                    <li class="footer-col-item">
+                        <a class="footer-col-link" href="#">Мужской портрет</a>
+                    </li>
+                    <li class="footer-col-item">
+                        <a class="footer-col-link" href="#">Парный портрет</a>
+                    </li>
+                    <li class="footer-col-item">
+                        <a class="footer-col-link" href="#">Семейный портрет</a>
+                    </li>
+                    <li class="footer-col-item">
+                        <a class="footer-col-link" href="#">Свадебный портрет</a>
+                    </li>
+                    <li class="footer-col-item">
+                        <a class="footer-col-link" href="#">Портрет родителей</a>
+                    </li>
+                    <li class="footer-col-item">
+                        <a class="footer-col-link" href="#">Портрет руководителя</a>
+                    </li>
+                    <li class="footer-col-item">
+                        <a class="footer-col-link" href="#">Портрет на юбилей</a>
+                    </li>
+                    <li class="footer-col-item">
+                        <a class="footer-col-link" href="#">Детский портрет</a>
+                    </li>
+                    <li class="footer-col-item">
+                        <a class="footer-col-link" href="#">Портрет питомца</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-col-title">Информация</h4>
+                <ul class="footer-col-list">
+                    <li class="footer-col-item">
+                        <a class="footer-col-link" href="#">Подарочная карта</a>
+                    </li>
+                    <li class="footer-col-item">
+                        <a class="footer-col-link" href="#">Оплата и доставка</a>
+                    </li>
+                    <li class="footer-col-item footer-col-item-discount">
+                        <a class="footer-col-link" href="#">Акции</a>
+                    </li>
+                    <li class="footer-col-item">
+                        <a class="footer-col-link" href="#">Сервис клиента</a>
+                    </li>
+                    <li class="footer-col-item">
+                        <a class="footer-col-link" href="#">Советы и идеи</a>
+                    </li>
+                    <li class="footer-col-item">
+                        <a class="footer-col-link" href="#">Все стили</a>
+                    </li>
+                    <li class="footer-col-item">
+                        <a class="footer-col-link" href="#">Размеры и цены</a>
+                    </li>
+                    <li class="footer-col-item">
+                        <a class="footer-col-link" href="#">Обрамление картин</a>
+                    </li>
+                    <li class="footer-col-item">
+                        <a class="footer-col-link" href="#">Контакты</a>
+                    </li>
+                    <li class="footer-col-item">
+                        <a class="footer-col-link" href="#">Вопросы и ответы</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+    <div class="copyright">
+        <div class="container copyright-container">
+            <span class="copyright-text">© 2021 VIARCANVAS</span>
+            <div class="copyright-images">
+                <img src="./images/footer/visa-image.png" alt="visa">
+                <img src="./images/footer/mastercard-image.png" alt="mastercard">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" 
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+</html>

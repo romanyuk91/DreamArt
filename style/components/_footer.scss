@@ -1,0 +1,179 @@
+.footer {
+    margin-top: $big-offset;
+    padding: $big-offset $big-offset;
+    background-color: $color-linen;
+    &-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        row-gap: 50px;
+    }
+
+    &-address {
+        margin: 80px 0 50px;
+
+        &-item {
+            display: block;
+            font-family: $font-main;
+            font-weight: 500;
+            font-size: 1.06rem;
+            line-height: 1.5rem;
+            color: $color-main;
+            cursor: pointer;
+            transition: color 0.2s ease-in;
+
+            &:not(:first-child) {
+                margin-top: 15px;
+            }
+
+            &:hover {
+                color: $color-hover;
+            }
+        }
+    }
+
+    &-social {
+        &-text {
+            display: block;
+            font-family: $font-main;
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 1.37rem;
+            color: $color-main;
+        }
+
+        &-icons {
+            display: flex;
+            column-gap: 15px;
+            margin-top: 10px;
+        }
+
+        i {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background-color: $color-coral;
+            background: linear-gradient(90deg, #FC8C5F 0%, #FA7846 100%), #AD8780;
+            box-shadow: 0px 2.77338px 0px #E87145;
+            border-radius: 50%;
+            color: $color-white;
+            cursor: pointer;
+            transition: color 0.2s ease-in, background 0.2s ease-in;
+
+            &:hover,
+            &:focus,
+            &:active {
+                color: $color-hover;
+                background: transparent;
+            }
+        }
+    }
+
+    &-col {
+        min-width: 220px;
+
+        &-title {
+            font-family: $font-main;
+            font-weight: 600;
+            font-size: 1.12rem;
+            line-height: 1.62rem;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+            color: $color-main;
+            margin-bottom: 30px;
+        }
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+        }
+
+        &-item {
+            font-family: $font-main;
+            font-size: 1rem;
+            line-height: 1.18rem;
+            text-transform: capitalize;
+            color: $color-main;
+            opacity: 0.75;
+            transition: color 0.2s ease-in;
+            &:hover,
+            &:focus,
+            &:active {
+                color: $color-hover;
+            }
+
+            &-discount {
+                text-align: center;
+                max-width: 80px;
+                color: $color-white;
+                background-color: $color-coral;
+                border-radius: 10px;
+                animation: discount 1s infinite linear;
+
+                @keyframes discount {
+                    0% {
+                        transform: scale(1);
+                        background-color: $color-coral;
+                    }
+                    50% {
+                        transform: scale(1.2);
+                        background-color: #EF9E48;
+                    } 
+                    100% {
+                        transform: scale(1);
+                        background-color: $color-coral;
+                    } 
+                }
+                &:hover,
+                &:focus,
+                &:active {
+                    animation: none;
+                    color: $color-white;
+                }
+           
+            }
+        }
+    }
+}
+
+.copyright {
+    background-color: $color-main;
+    &-container {
+        padding: 25px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        row-gap: 25px;
+    }
+
+    &-text {
+        display: block;
+        font-family: $font-main;
+        font-size: 0.93rem;
+        line-height: 1.12rem;
+        color: $color-white;
+        opacity: 0.5;
+    }
+
+    &-images {
+        display: flex;
+        column-gap: 15px;
+    }
+}
+
+// media 
+
+@include miniTablet {
+    .footer {
+        &-container {
+            justify-content: center;
+        }
+    }
+}

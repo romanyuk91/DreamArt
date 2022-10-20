@@ -1,0 +1,145 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    &-social {
+        display: flex;
+        align-items: center;
+        column-gap: 6px;
+        margin-left: 30px;
+    
+        i {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.1rem;
+            width: 40px;
+            height: 40px;
+            color: $color-white;
+            background-color: #AD8780;
+            box-shadow: 0px 2px 0px #91665E;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: color 0.2s ease-in;
+            &:hover,
+            &:focus,
+            &:active {
+                color: $color-hover;
+            }
+        }
+    }
+}
+
+.nav {
+    &-list {
+        display: flex;
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+
+    &-link {
+        font-family: $font-main;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        display: flex;
+        align-items: center;
+        color: $color-main;
+        transition: color 0.2s ease-in;
+        &:hover,
+        &:focus,
+        &:active {
+            color: $color-hover;
+        }
+    }
+
+    &-btns {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+    
+        i {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 48px;
+            height: 48px;
+            color: $color-coral;
+            background-color: $color-white;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: color 0.2s ease-in, background-color 0.2s ease-in;
+            &:hover,
+            &:focus,
+            &:active {
+                color: $color-white;
+                background-color: $color-hover;
+            }
+        }
+    }
+}
+
+// media
+
+@include tablet {
+    .header {
+
+        &-inner {
+            padding-left: 30px;
+        }
+    
+        &-social {
+            display: none;
+        }
+    }
+}
+
+@include miniTablet {
+    .header {
+    
+        &-inner {
+            flex-direction: column;
+            flex-grow: 1;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 100;
+            width: 65%;
+            height: 100vh;
+            padding: 100px 20px;
+            background-color: #FBF2EA;
+            display: none;
+        }
+
+        .mobile-nav-btn {
+            display: block;
+        }
+    
+        &-social {
+            display: flex;
+            margin-left: 0;
+        }
+    }
+    
+    .nav {
+        &-list {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

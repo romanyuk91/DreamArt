@@ -1,0 +1,51 @@
+.other {
+    margin-top: $big-offset;
+    &-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 50px;
+        row-gap: 30px;
+        margin-top: 50px;
+    }
+    &-item {
+        max-width: 410px;
+        
+        &-images {
+            position: relative;
+            height: 520px;
+        }
+
+        &-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+
+        &-text {
+            font-family: $font-main;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            text-align: center;
+            color: $color-main;
+            margin: 10px 0;
+        }
+
+        &-price {
+            font-family: $font-main;
+            font-size: 1.5rem;
+            line-height: 1.81rem;
+            color: $color-main;
+            text-align: center;
+            margin-bottom: 15px;
+            span {
+                color: $color-coral;
+            }
+        }
+    }
+
+    &-btn {
+        margin: 0 auto;
+    }
+}

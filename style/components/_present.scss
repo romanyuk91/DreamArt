@@ -1,0 +1,60 @@
+.present {
+    padding-top: 50px;
+    background-color: #F9EEE9;
+
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-desc {
+        max-width: 545px;
+    }
+
+    &-title {
+        font-family: $font-second;
+        font-weight: 600;
+        font-size: 2.8rem;
+        line-height: 3.4rem;
+        color: $color-main;
+    }
+
+    & span {
+        color: $color-coral;
+    }
+
+    &-text {
+        font-family: $font-main;
+        font-size: 1.25rem;
+        line-height: 1.68rem;
+        color: $color-main;
+        margin: 40px 0;
+    }
+}
+
+// media
+
+@include miniTablet {
+    .present {
+    
+        &-container {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        &-desc {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding-bottom: 30px;
+        }
+    
+        &-text {
+            margin: 20px 0;
+        }
+
+       
+    }
+}

@@ -1,0 +1,141 @@
+.about {
+    margin-top: $big-offset;
+
+    &-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        row-gap: 20px;
+        padding: 50px 40px;
+    }
+
+    &-list-item {
+        padding: 15px 25px;
+        font-family: $font-main;
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1.18rem;
+        color: $color-coral;
+        background: rgba(173, 135, 128, 0.15);
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    &-list-title {
+        color: $color-white;
+        background: #AD8780;
+    }
+
+    &-tab {
+        background-color: #F9EFEB;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    &-tab-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 100px;
+        row-gap: 30px;
+        margin: 9px;
+        padding: 40px;
+        border: 2px solid $color-white;
+        box-shadow: 4px 4px 10px rgba(250, 120, 70, 0.15);
+        border-radius: 8px;
+    }
+
+    &-tab-image {
+        position: relative;
+        &::before {
+            content: url('/images/about/about-stiker.png');
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    &-tab-list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    &-tab-item {
+        position: relative;
+        max-width: 450px;
+        padding: 40px 30px 40px 80px;
+        font-family: $font-main;
+        font-size: 1.12rem;
+        line-height: 1.37rem;
+        color: $color-main;
+        border: 2px solid $color-white;
+        box-shadow: 4px 4px 10px rgba(250, 120, 70, 0.25);
+        border-radius: 8px;
+        span {
+            color: $color-coral;
+        }
+        img {
+            position: absolute;
+            top: 50%;
+            left: -80px;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+// media
+
+@include tablet {
+    .about {
+        &-tab-item {
+            img {
+                left: -80px;
+            }
+        }
+    }
+}
+
+@include miniTablet {
+    .about {
+
+        &-list {
+            display: flex;
+            justify-content: center;
+            column-gap: 20px;
+            padding: 50px 40px;
+        }
+    
+        &-list-item {
+            padding: 15px 25px;
+        }
+    
+        &-tab-inner {
+            flex-direction: column-reverse;
+            align-items: center;
+            padding: 20px;
+            
+        }
+    
+        &-tab-item {
+            padding: 10px;
+            img {
+                width: 60px;
+                height: 60px;
+                left: -50px;
+            }
+        }
+    }
+}
+
+@include mobile {
+    .about {
+        &-tab-image {
+            position: relative;
+            &::before {
+                display: none;
+            }
+        }
+    }
+}

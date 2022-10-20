@@ -1,0 +1,89 @@
+.faq {
+    margin-top: $big-offset;
+    &-container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 30px;
+    }
+
+    &-desc {
+        grid-column: 3 span;
+        text-align: center;
+    }
+
+    &-contact {
+        position: relative;
+        margin-top: 100px;
+        padding: 80px 30px 30px;
+        background-color: $color-linen;
+
+        &-icon {
+            position: absolute;
+            top: -30%;
+            left: 0;
+            
+        }
+
+        &-title {
+            font-family: $font-main;
+            font-size: 1.12rem;
+            line-height: 1.62rem;
+            letter-spacing: -0.02em;
+            color: $color-main;
+        }
+
+        &-text {
+            margin: 10px 0 20px;
+            font-family: $font-main;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 0.87rem;
+            line-height: 1.25rem;
+            color: $color-main;
+            opacity: 0.75;
+        }
+    }
+
+    &-list {
+        display: grid;
+        align-items: center;
+        grid-column-start: 5;
+        grid-column-end: 13;
+    }
+
+    &-accordion {
+        cursor: pointer;
+
+        &-title {
+            font-family: $font-main;
+            font-weight: 600;
+            font-size: 1.12rem;
+            line-height: 1.62rem;
+            letter-spacing: -0.02em;
+            color: $color-main;
+        }
+    }
+}
+
+// media 
+
+@include miniTablet {
+    .faq {
+
+        &-desc {
+            grid-column-start: 1;
+            grid-column-end: 12;
+        }
+    
+        &-list {
+            grid-column-start: 1;
+            grid-column-end: 12;
+        }
+    
+        &-accordion {
+            &:not(:first-child) {
+                margin-top: 15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,80 @@
+body {
+    font-family: 'Inter Regular', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: $color-main;
+    background-color: $color-white;
+    overflow-x: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 $container-padding;
+    max-width: $container-width;
+}
+
+.section-title {
+    font-family: $font-second;
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: $color-main;
+}
+
+.section-subtitle {
+    font-family: $font-main;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    text-align: center;
+    color: $color-main;
+    margin-top: 20px;
+}
+
+
+
+.hidden {
+    display: none!important;
+    
+}
+
+.active {
+    display: flex!important;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.mobile-nav-btn {
+    display: none;
+    z-index: 100;
+    font-size: 2rem;
+    color: $color-main;
+    transition: color 0.2s ease-in;
+    &:hover,
+    &:focus,
+    &:active {
+        color: $color-hover;
+    }
+}
+
+html {
+    font-size: 16px;
+}
+
+@include tablet {
+    html {
+        font-size: 14px;
+    }
+}
+
+@include miniTablet {
+    html {
+        font-size: 12px;
+    }
+}

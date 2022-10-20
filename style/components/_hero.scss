@@ -1,5 +1,5 @@
 .hero {
-    background-image: url('../../images/hero/hero-img.png');
+    background-image: url('/images/hero/hero-img.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -40,7 +40,7 @@
                 margin-top: 26px;
             }
             &::before {
-                content: url('../../images/hero/painter.svg');
+                content: url('/images/hero/painter.svg');
                 position: absolute;
                 top: 50%;
                 left: 0;

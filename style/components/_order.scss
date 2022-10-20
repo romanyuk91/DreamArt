@@ -32,14 +32,14 @@
         border: 0.5px solid $color-coral;
         border-radius: 10px;
         &:nth-child(1)::before {
-            content: url('/images/order/order-option-1.png');
+            content: url('../images/order/order-option-1.png');
             position: absolute;
             top: 50%;
             left: -20%;
             transform: translateY(-50%);
         }
         &:nth-child(2)::before {
-            content: url('/images/order/order-option-2.png');
+            content: url('../images/order/order-option-2.png');
             position: absolute;
             top: 50%;
             left: -20%;

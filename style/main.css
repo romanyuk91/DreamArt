@@ -315,7 +315,7 @@ html {
   }
 }
 .hero {
-  background-image: url("../../images/hero/hero-img.png");
+  background-image: url("../images/hero/hero-img.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -354,7 +354,7 @@ html {
   margin-top: 26px;
 }
 .hero-list_item::before {
-  content: url("../../images/hero/painter.svg");
+  content: url("../images/hero/painter.svg");
   position: absolute;
   top: 50%;
   left: 0;
@@ -619,14 +619,14 @@ html {
   border-radius: 10px;
 }
 .order-option:nth-child(1)::before {
-  content: url("/images/order/order-option-1.png");
+  content: url("../images/order/order-option-1.png");
   position: absolute;
   top: 50%;
   left: -20%;
   transform: translateY(-50%);
 }
 .order-option:nth-child(2)::before {
-  content: url("/images/order/order-option-2.png");
+  content: url("../images/order/order-option-2.png");
   position: absolute;
   top: 50%;
   left: -20%;
@@ -790,7 +790,7 @@ html {
   margin-top: 50px;
 }
 .support-bg {
-  background-image: url("../../images/support/support-bg.png");
+  background-image: url("../images/support/support-bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

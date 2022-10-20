@@ -790,7 +790,7 @@ html {
   margin-top: 50px;
 }
 .support-bg {
-  background-image: url("../../images/support/support-bg.png");
+  background-image: url("./images/support/support-bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
